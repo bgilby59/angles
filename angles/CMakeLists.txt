@@ -15,7 +15,7 @@ find_package(ament_cmake REQUIRED)
 
 add_library(angles INTERFACE)
 target_include_directories(angles INTERFACE
-  "$<INSTALL_INTERFACE:include/angles>")
+  "$<INSTALL_INTERFACE:include>")
 install(TARGETS angles EXPORT export_angles)
 
 # TODO(sloretz) remove when old-style CMake interface is no longer supported
